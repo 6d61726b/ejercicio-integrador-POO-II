@@ -11,8 +11,7 @@ void Sucursal::agregarInstrumento(Instrumento instrumento)
 
 void Sucursal::listarInstrumentos()
 {
-	std::vector<Instrumento>::iterator it;
-	it = this->instrumentos.begin();
+	auto it = this->instrumentos.begin();
 
 	while (it != this->instrumentos.end())
 	{
