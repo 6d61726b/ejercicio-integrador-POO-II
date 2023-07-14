@@ -11,8 +11,7 @@ void Fabrica::agregarSucursal(Sucursal sucursal)
 
 void Fabrica::listarInstrumentos()
 {
-	std::vector<Sucursal>::iterator it;
-	it = this->sucursales.begin();
+	auto it = this->sucursales.begin();
 
 	while (it != this->sucursales.end())
 	{
