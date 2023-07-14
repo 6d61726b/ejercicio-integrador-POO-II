@@ -1,0 +1,22 @@
+#ifndef SUCURSAL_H
+#define SUCURSAL_H
+
+#include "Instrumento.h"
+#include <iostream>
+#include <string>
+#include <vector>
+
+class Sucursal
+{
+	std::string nombre;
+	std::vector<Instrumento> instrumentos;
+
+public:
+	Sucursal(std::string nombre);
+	~Sucursal() = default;
+	void agregarInstrumento(Instrumento instrumento);
+	void listarInstrumentos();
+	std::string getNombre();
+};
+
+#endif
