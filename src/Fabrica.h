@@ -11,7 +11,7 @@ class Fabrica
 public:
 	Fabrica();
 	~Fabrica() = default;
-	void agregarSucursal(Sucursal sucursal);
+	void agregarSucursal(const Sucursal &sucursal);
 	void listarInstrumentos();
 };
 

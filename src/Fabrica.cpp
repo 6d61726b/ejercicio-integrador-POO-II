@@ -4,7 +4,7 @@ Fabrica::Fabrica()
 {	
 }
 
-void Fabrica::agregarSucursal(Sucursal sucursal)
+void Fabrica::agregarSucursal(const Sucursal &sucursal)
 {
 	this->sucursales.push_back(sucursal);
 }
