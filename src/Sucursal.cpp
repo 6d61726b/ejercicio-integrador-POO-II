@@ -4,7 +4,7 @@ Sucursal::Sucursal(std::string nombre) : nombre(nombre)
 {
 }
 
-void Sucursal::agregarInstrumento(Instrumento instrumento)
+void Sucursal::agregarInstrumento(const Instrumento &instrumento)
 {
 	this->instrumentos.push_back(instrumento);
 }

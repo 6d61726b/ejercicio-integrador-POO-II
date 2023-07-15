@@ -14,7 +14,7 @@ class Sucursal
 public:
 	Sucursal(std::string nombre);
 	~Sucursal() = default;
-	void agregarInstrumento(Instrumento instrumento);
+	void agregarInstrumento(const Instrumento &instrumento);
 	void listarInstrumentos();
 	std::string getNombre();
 };
