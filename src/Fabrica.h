@@ -13,6 +13,7 @@ public:
 	~Fabrica() = default;
 	void agregarSucursal(const Sucursal &sucursal);
 	void listarInstrumentos();
+	std::vector<Instrumento> instrumentoPorTipo(TipoInstrumento tipo);
 };
 
 #endif
