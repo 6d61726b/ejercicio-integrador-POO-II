@@ -24,7 +24,7 @@ std::vector<Instrumento> Sucursal::instrumentoPorTipo(TipoInstrumento tipo)
 {
 	std::vector<Instrumento> nuevaListaInstrumentos;
 
-	for (auto instrumento : instrumentos)
+	for (const auto& instrumento : instrumentos)
 	{
 		if (instrumento.getTipo() == tipo)
 			nuevaListaInstrumentos.push_back(instrumento);
