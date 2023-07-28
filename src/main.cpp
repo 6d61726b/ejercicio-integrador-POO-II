@@ -11,7 +11,11 @@ int main()
 	Fabrica fabrica {};
 	
 	cargarFabrica(fabrica);
-	fabrica.listarInstrumentos();
+	//fabrica.listarInstrumentos();
+	std::vector<Instrumento> lista = fabrica.instrumentoPorTipo(TipoInstrumento::VIENTO);
+
+	for (auto i : lista)
+		std::cout << i.toString() << std::endl;
 
 	return 0;
 }
