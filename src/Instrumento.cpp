@@ -9,6 +9,11 @@ Instrumento::Instrumento(std::string id, double precio, TipoInstrumento tipo)
 	this->tipo = tipo;
 }
 
+TipoInstrumento Instrumento::getTipo() const
+{
+	return this->tipo;
+}
+
 std::string Instrumento::toString()
 {
 	std::string ti = "";

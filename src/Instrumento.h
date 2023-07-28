@@ -2,6 +2,7 @@
 #define INSTRUMENTO_H
 
 #include "TipoInstrumento.h"
+#include <iostream>
 #include <string>
 
 class Instrumento
@@ -13,6 +14,7 @@ class Instrumento
 public:
 	Instrumento(std::string id, double precio, TipoInstrumento tipo);
 	~Instrumento() = default;
+	TipoInstrumento getTipo() const;
 	std::string toString();
 };
 
