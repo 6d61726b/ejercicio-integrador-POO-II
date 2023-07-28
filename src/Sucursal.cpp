@@ -20,6 +20,19 @@ void Sucursal::listarInstrumentos()
 	}
 }
 
+std::vector<Instrumento> Sucursal::instrumentoPorTipo(TipoInstrumento tipo)
+{
+	std::vector<Instrumento> nuevaListaInstrumentos;
+
+	for (auto instrumento : instrumentos)
+	{
+		if (instrumento.getTipo() == tipo)
+			nuevaListaInstrumentos.push_back(instrumento);
+	}
+
+	return nuevaListaInstrumentos;
+}
+
 std::string Sucursal::getNombre()
 {
 	return this->nombre;

@@ -16,6 +16,7 @@ public:
 	~Sucursal() = default;
 	void agregarInstrumento(const Instrumento &instrumento);
 	void listarInstrumentos();
+	std::vector<Instrumento> instrumentoPorTipo(TipoInstrumento tipo);
 	std::string getNombre();
 };
 
